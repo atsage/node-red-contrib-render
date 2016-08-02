@@ -4,7 +4,7 @@
   "description": "Node for node-red to render a moustache template passed into the node",
   "main": "render.js",
   "dependencies": {
-    "mustache": "latest"
+    "mustache": "2.2.1"
   },
   "node-red": {
     "nodes": {
