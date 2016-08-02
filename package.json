@@ -8,7 +8,7 @@
   },
   "node-red": {
     "nodes": {
-      "render": "render"
+      "render": "render.js"
     }
   },
   "scripts": {
