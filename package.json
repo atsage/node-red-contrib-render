@@ -1,26 +1,35 @@
 {
-  "name": "node-red-contrib-mustache",
-  "version": "0.0.1",
-  "description": "Render a mustache template passed into the node",
-  "main": "mustache.js",
+  "name": "node-red-contrib-render",
+  "version": "1.1.0",
+  "description": "Node for node-red to render a moustache template passed into the node",
+  "main": "render.js",
   "dependencies": {
-    "mustache": "2.x"
+    "mustache": "2.2.1"
   },
   "node-red": {
     "nodes": {
-      "mustache": "mustache.js"
+      "render": "render.js"
     }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hammoaj/node-red-contrib-mustache"
+    "url": "https://github.com/redconnect-io/node-red-contrib-render"
   },
   "keywords": [
     "node-red",
-    "mustache",
+    "moustache",
     "handlebars",
-    "render"
+    "render",
+    "web",
+    "webserver",
+    "redconnect"
   ],
-  "author": "Adam Hammond",
-  "license": "Apache-2.0"
+  "author": "Redconnect.io (Red Ant)",
+  "contributors": ["Adam Hammond"],
+  "license": "MIT",
+  "homepage": "http://www.redconnect.io",
+  "bugs": {}
 }

@@ -1,5 +1,5 @@
 
-<script type="text/x-red" data-template-name="mustache">
+<script type="text/x-red" data-template-name="render">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="common.label.name"></span></label>
         <input type="text" id="node-input-name" data-i18n="[placeholder]common.label.name">
@@ -18,7 +18,7 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="mustache">
+<script type="text/x-red" data-help-name="render">
 <p>Sets a property based on the template provided in <code>msg.template</code>.</p>
  <h3>Inputs</h3>
  <dl class="message-properties">
@@ -52,11 +52,11 @@ payload: {
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('mustache',{
+    RED.nodes.registerType('render',{
         color:"rgb(243, 181, 103)",
         category: 'function',
         defaults: {
-            name: {value:"Render template"},
+            name: {value:"Render"},
             field: {value:"payload", validate: RED.validators.typedInput("fieldType")},
             fieldType: {value:"msg"},
             output: {value:"str"}

@@ -59,7 +59,7 @@ module.exports = function(RED) {
             return new NodeContext(view, this.nodeContext,this.msgContext);
     };
 
-    function MustacheNode(n) {
+    function RenderNode(n) {
         RED.nodes.createNode(this,n);
         this.name = n.name;
         this.field = n.field || "payload";
@@ -93,5 +93,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("mustache",MustacheNode);
+    RED.nodes.registerType("render",RenderNode);
 }
