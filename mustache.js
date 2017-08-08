@@ -18,7 +18,7 @@ module.exports = function(RED) {
     "use strict";
     var mustache = require("mustache");
 
-    function TemplateNode(n) {
+    function MustacheNode(n) {
         RED.nodes.createNode(this,n);
         this.name = n.name;
         this.field = n.field || "payload";
@@ -46,5 +46,5 @@ module.exports = function(RED) {
         });
     }
 
-    RED.nodes.registerType("render",TemplateNode);
+    RED.nodes.registerType("mustache",MustacheNode);
 }
