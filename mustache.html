@@ -14,7 +14,7 @@
   limitations under the License.
 -->
 
-<script type="text/x-red" data-template-name="render">
+<script type="text/x-red" data-template-name="mustache">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="common.label.name"></span></label>
         <input type="text" id="node-input-name" data-i18n="[placeholder]common.label.name">
@@ -25,7 +25,7 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="render">
+<script type="text/x-red" data-help-name="mustache">
     <p>Sets a property based on the template provided in the msg.template property.</p>
     <p>This uses the <i><a href="http://mustache.github.io/mustache.5.html" target="_new">mustache</a></i> format.</p>
     <p>For example, when a msg.template of:
@@ -43,7 +43,7 @@
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('render',{
+    RED.nodes.registerType('mustache',{
         color:"rgb(243, 181, 103)",
         category: 'function',
         defaults: {
