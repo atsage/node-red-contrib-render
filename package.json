@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-render",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Node for node-red to render a moustache template passed into the node",
   "main": "render.js",
   "dependencies": {
@@ -28,7 +28,9 @@
     "redconnect"
   ],
   "author": "Redconnect.io (Red Ant)",
-  "contributors": ["Adam Hammond"],
+  "contributors": [
+    "Adam Hammond"
+  ],
   "license": "MIT",
   "homepage": "http://www.redconnect.io",
   "bugs": {}
